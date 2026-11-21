@@ -1,0 +1,51 @@
+<div dir="rtl" class="app">
+  <div class="controls no-print">
+    <label for="scanInput">بارکوډ سکین یا ولیکئ (او Enter ووهئ):</label>
+    <div class="row">
+      <input id="scanInput" type="text" placeholder="د مثال په توګه: 636836837378377" autofocus />
+      <button id="printBtn" type="button">چاپ (Print)</button>
+    </div>
+    <div id="statusMsg" class="status">چمتو دی — بارکوډ سکین کړئ.</div>
+  </div>
+
+  <div id="printArea">
+    <div class="card">
+      <div class="top">
+        <div>
+          <div class="ar-title">عرض خاص</div>
+          <div class="en-sub">PROMOTION</div>
+        </div>
+        <div class="store">
+          <div class="store-ar">أسواق دي مارت</div>
+          <div class="store-en">Dmart</div>
+        </div>
+      </div>
+
+      <div class="mid">
+        <div class="price-box">
+          <div class="unit">الحبة بسعر</div>
+          <div class="price"><span id="vPrice">85</span> <small>ريال</small></div>
+        </div>
+
+        <div class="item-box">
+          <div id="vName" class="item-name">ارز ابو كاس پشاوري</div>
+          <div id="vWeight" class="item-weight">١٠ كيلو</div>
+        </div>
+      </div>
+
+      <div class="dash"></div>
+
+      <div class="bot">
+        <div class="barcode-box">
+          <svg id="barcode"></svg>
+        </div>
+        <div class="dates">
+          <div>يبدأ هذا العرض من <strong id="vStart">26/10/2026</strong></div>
+          <div>وحتى تاريخ <strong id="vEnd">29/10/2026</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.6/dist/JsBarcode.all.min.js"></script>
