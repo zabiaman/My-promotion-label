@@ -1,0 +1,193 @@
+.app {
+  font-family: Tahoma, Arial, sans-serif;
+  background: #eef2f5;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.controls {
+  width: 100%;
+  max-width: 560px;
+  background: #ffffff;
+  padding: 12px 14px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.controls label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+}
+
+#scanInput {
+  flex: 1;
+  padding: 9px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+#printBtn {
+  padding: 9px 16px;
+  background: #0f766e;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#printBtn:active {
+  transform: scale(0.97);
+}
+
+.status {
+  font-size: 13px;
+  color: #374151;
+}
+
+#printArea {
+  width: 100%;
+  max-width: 560px;
+}
+
+.card {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 2px solid #e11d48;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.top {
+  background: linear-gradient(135deg, #b91c1c 0%, #e11d48 65%, #f97316 100%);
+  color: #ffffff;
+  padding: 16px 20px 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  clip-path: polygon(0 0, 100% 0, 100% 76%, 0 100%);
+  border-bottom: 6px solid #facc15;
+}
+
+.ar-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.en-sub {
+  font-size: 12px;
+  letter-spacing: 3px;
+  opacity: 0.95;
+}
+
+.store {
+  text-align: left;
+}
+
+.store-ar {
+  font-size: 15px;
+}
+
+.store-en {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.mid {
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.price-box {
+  background: #10a36f;
+  color: #ffffff;
+  border-radius: 14px;
+  padding: 12px 18px;
+  min-width: 165px;
+  text-align: center;
+}
+
+.unit {
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.price {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.price small {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.item-box {
+  text-align: right;
+}
+
+.item-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #cf112c;
+}
+
+.item-weight {
+  font-size: 20px;
+  color: #111827;
+  margin-top: 4px;
+}
+
+.dash {
+  border-top: 2px dashed #cbd5e1;
+  margin: 0 16px;
+}
+
+.bot {
+  padding: 14px 20px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.dates {
+  font-size: 13px;
+  color: #334155;
+  text-align: right;
+  line-height: 1.6;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .app {
+    background: #ffffff;
+    padding: 0;
+  }
+  .card {
+    box-shadow: none;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
